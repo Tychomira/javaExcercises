@@ -45,9 +45,13 @@ Scanner input=new Scanner(System.in);
         writer.print("\t"+formatHeight);
         System.out.println("Person was created successfully!!!");
            System.out.println(" ");
-        if (input.equals("exit")) { 
-           writer.close();
-                              }
+       
+       String   checkWord=input.nextLine();
+    if (input.equals("exit")) {
+        System.out.println("The program has endided!");
+    writer.close();}
+    else{
+        continue;
       } while(input.hasNextLine());
        
            
